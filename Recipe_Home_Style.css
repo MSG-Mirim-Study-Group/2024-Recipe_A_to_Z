@@ -1,0 +1,82 @@
+h1 {
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center; /* 세로 방향 가운데 정렬 */
+    padding: 0;
+    margin: 3vw;
+}
+
+.navbar ul {
+    padding: 0 50px; /* 좌우 패딩 추가 */
+}
+
+.navbar-left {
+    display: flex;
+    flex-grow: 1; /* 남은 공간을 차지하도록 설정 */
+    justify-content: left; /* 가운데 정렬 */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 8vw; /* 항목 간의 간격 설정 */
+}
+
+.navbar-right {
+    margin-left: auto; /* 오른쪽으로 이동 */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    display: block;
+}
+
+.navbar a:hover {
+    color: hsl(18, 100%, 66%);
+    border-radius: 1vw;
+    font-weight: bold;
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out, font-weight 0.2s ease-in-out;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-image: url(/images/홈\ 화면\ 배경사진_다운로드.png); /* 이미지 경로 수정 */
+    background-size: cover; /* 화면을 꽉 채우도록 설정 */
+    background-position: center; /* 이미지를 중앙에 위치 */
+    background-repeat: no-repeat; /* 이미지 반복 방지 */
+    min-height: 100vh; /* 최소 높이를 전체 화면으로 설정 */
+}
+
+.center-logo {
+    display: block;
+    position: relative;
+    top: 10vh;
+    height: 90px; /* 로고 크기 조정 */
+    left: 5vw;
+}
+
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+main p {
+    position: relative; /* p 태그 위치를 조정할 수 있도록 설정 */
+    top: 20vh; /* 위쪽에서 20% 내려오도록 설정 */
+    left: 5vw; /* 왼쪽에서 10%만큼 이동 */
+    font-size: 1.1rem; /* 텍스트 크기 조정 */
+    color: white; /* 텍스트 색상 변경 */
+}
