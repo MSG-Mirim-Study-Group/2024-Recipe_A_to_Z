@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'Pretendard-Regular';
+    background: url('/images/bg.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-left li, .navbar-right li {
+    margin-right: 50px;
+}
+
+.navbar-left li:last-child, .navbar-right li:last-child {
+    margin-right: 0;
+}
+
+.navbar-right img {
+    width: 35px;
+    height: 35px;
+}
+
+.navbar a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    color: #ff8652;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 284px;
+    height: 976px;
+    background: linear-gradient(to bottom, rgb(255, 134, 82), transparent);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.sidebar h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.sidebar h1::before {
+    margin-right: 10px;
+    text-align: center;
+}
+
+.sidebar img {
+    width: 220px;
+    height: 38px;
+}
+
+.menu-category {
+    margin-bottom: 30px;
+}
+
+.menu-category h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    margin-left: 500px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.sidebar a:hover {
+    color: #ff8652;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.menu-category a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px 10px 5px 0;
+}
+
+.menu-category a:hover {
+    text-decoration: underline;
+}
+
+/* 메인 콘텐츠 영역 */
+.content {
+    margin-left: 25%;
+    padding: 20px;
+}
+
+.main-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 10;
+}
+
+.center-text h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.center-text p {
+    font-size: 18px;
+    margin: 10px 0 0 0;
+}
