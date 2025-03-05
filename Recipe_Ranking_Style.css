@@ -1,3 +1,141 @@
-h3 {
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: hsl(18, 65%, 42%);
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar-left ul img {
+    width: 35px;
+    height: 35px;
+}
+
+
+.navbar-left, .navbar-right {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-left li, .navbar-right li {
+    margin-right: 50px;
+}
+
+.navbar-left li:last-child, .navbar-right li:last-child {
+    margin-right: 0;
+}
+
+.navbar a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    color: hsl(18, 100%, 66%);
+}
+
+body {
+    background-color: hsl(18, 65%, 42%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    margin: 0px;
+    font-family:'Pretendard-Regular';;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.item1 {
     text-align: center;
+    align-items: flex-end;
+    background-color: #FFE3D7;
+    padding: 20px;
+    width: 443px;
+    height: 298px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: auto;
+}
+
+.item2 {
+    text-align: center;
+    align-items: flex-end;
+    background-color:#FFC2A6;
+    width: 443px;
+    height: 357px;
+
+}
+
+.item3 {
+    text-align: center;
+    align-items: flex-end;
+    background-color: #FFFFFF;
+    width: 443px;
+    height: 216px;
+    margin-top: auto;
+}
+
+.item1 img {
+    margin-bottom: 70px;
+}
+
+.item2 img {
+    margin-bottom: 50px;
+    box-shadow: 0 0 40px 0px rgba(255, 255, 255);
+}
+
+.item3 img {
+    margin-bottom: 50px;
+}
+
+.description {
+    margin-top: 15px;
+}
+
+.number {
+    font-size: 71px;
+    font-weight: bold;
+    color: #FF8652;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    font-style: thick;
+}
+
+.box img {
+    margin-top: -50px;
+    left: 50%;
+    width: 392px;
+    height: 392px;
+    transform: translateX(-50%);
 }
